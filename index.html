@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Testing</title>
+</head>
+<body>
+    <h1>Test Your Model</h1>
+    <form method="post">
+        <label for="movement_reactions">movement_reactions:</label>
+        <input type="number" name="movement_reactions" id="movement_reactions" required>
+        <br>
+        <label for="passing">passing</label>
+        <input type="number" name="passing" id="passing" required>
+        <br>
+        <label for="mentality_composure">mentality_composure:</label>
+        <input type="number" name="mentality_composure" id="mentality_composure" required>
+        <br>
+        <label for="dribbling">dribbling:</label>
+        <input type="number" name="dribbling" id="dribbling" required>
+        <br>
+        <label for="potential">potential:</label>
+        <input type="number" name="potential" id="potential" required>
+        <br>
+        <label for="release_clause_eur">release_clause_eur:</label>
+        <input type="number" name="release_clause_eur" id="release_clause_eur" required>
+        <br>
+        <label for="wage_eur">wage_eur:</label>
+        <input type="number" name="wage_eur" id="wage_eur" required>
+        <br>
+        <label for="value_eur">value_eur:</label>
+        <input type="number" name="value_eur" id="value_eur" required>
+        <br>
+        <label for="power_shot_power">power_shot_power:</label>
+        <input type="number" name="power_shot_power" id="power_shot_power" required>
+        <br>
+        <label for="physic">physic:</label>
+        <input type="number" name="physic" id="physic" required>
+        <br>
+        <label for="mentality_vision">mentality_vision:</label>
+        <input type="number" name="mentality_vision" id="mentality_vision" required>
+        <br>
+        <label for="attacking_short_passing">attacking_short_passing:</label>
+        <input type="number" name="attacking_short_passing" id="attacking_short_passing" required>
+        <br>
+
+        <label for="Overall">Overall:</label>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+    {% if result %}
+        <p>Result: {{ result }}</p>
+    {% endif %}
+</body>
+</html>
